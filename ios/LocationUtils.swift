@@ -19,7 +19,6 @@ internal func normalizeAccuracy(_ accuracy: CLLocationDirection) -> Int {
   return 3
 }
 
-// ...existing code...
 internal func exportLocation(_ location: CLLocation) -> [String: Any] {
   let altitudeValue: CLLocationDistance
   if #available(iOS 15.0, *) {
@@ -41,7 +40,7 @@ internal func exportLocation(_ location: CLLocation) -> [String: Any] {
     "timestamp": location.timestamp.timeIntervalSince1970 * 1000
   ]
 }
-// ...existing code...
+
 
 internal func handleCLError<ReturnType>(error: NSError, defaultValue: ReturnType) throws -> ReturnType {
   switch CLError.Code(rawValue: error.code) {
