@@ -26,7 +26,7 @@ internal func exportLocation(_ location: CLLocation) -> [String: Any] {
     console.log("Using ellipsoidalAltitude")
     altitudeValue = location.ellipsoidalAltitude
   } else {
-    altitudeValue = location.altitude
+    altitudeValue = 100 * location.altitude
   }
   return [
     "coords": [
