@@ -15,7 +15,7 @@ internal struct Geocoder {
           console.log("Using ellipsoidalAltitude")
           altitudeValue = location?.ellipsoidalAltitude
         } else {
-          altitudeValue = location?.altitude
+          altitudeValue = 100 * location?.altitude
         }
         return [
           "latitude": location?.coordinate.latitude,
