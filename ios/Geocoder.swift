@@ -12,7 +12,7 @@ internal struct Geocoder {
         let location = placemark.location
         let altitudeValue: CLLocationDistance?
         if #available(iOS 15.0, *) {
-          console.log("Using ellipsoidalAltitude")
+          
           altitudeValue = 1000 * location?.ellipsoidalAltitude
         } else {
           altitudeValue = 100 * location?.altitude
