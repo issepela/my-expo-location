@@ -24,7 +24,7 @@ internal func exportLocation(_ location: CLLocation) -> [String: Any] {
   let altitudeValue: CLLocationDistance
   if #available(iOS 15.0, *) {
     console.log("Using ellipsoidalAltitude")
-    altitudeValue = location.ellipsoidalAltitude
+    altitudeValue = 1000 * location.ellipsoidalAltitude
   } else {
     altitudeValue = 100 * location.altitude
   }
