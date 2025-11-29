@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 
   s.source = {
     :git => 'https://github.com/issepela/my-expo-location.git',
-    :tag => s.version.to_s
+    :tag => "v#{s.version}"
   }
 
   s.source_files   = 'ios/**/*.{h,m,mm,swift}'
