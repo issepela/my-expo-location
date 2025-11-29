@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name           = 'ExpoLocation'
   s.version        = '19.0.7'
-  s.summary        = 'Custom modified fork of expo-location'
+  s.summary        = 'Custom expo-location'
   s.description    = 'Custom modified fork of expo-location for eclipse countdown. The altitude in iOS is the altitude over the WGS84 ellipsoid.'
   s.homepage       = 'https://github.com/issepela/my-expo-location'
   s.license        = { :type => 'MIT' }
