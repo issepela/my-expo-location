@@ -1,11 +1,22 @@
 {
-  "platforms": ["ios", "android"],
+  "name": "expo-location",
+  "version": "1.0.0",
+  "summary": "Custom Expo Location module",
+  "description": "A custom implementation of Expo Location for testing.",
+  "homepage": "https://github.com/issepela/my-expo-location",
+  "platforms": ["apple", "android"],
 
-  "ios": {
-    "podspecPath": "./ExpoLocation.podspec"
+  "apple": {
+    "modules": ["LocationModule"]
   },
 
   "android": {
-    "gradleProjectPath": "android"
+    "modules": ["expo.modules.location.LocationModule"],
+    "publication": {
+      "groupId": "host.exp.exponent",
+      "artifactId": "expo.modules.location",
+      "version": "1.0.0",
+      "repository": "local-maven-repo"
+    }
   }
 }
