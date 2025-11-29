@@ -1,23 +1,48 @@
 {
   "name": "expo-location",
   "version": "19.0.7",
-  "description": "Custom modified fork of expo-location to show  height above the ellipsoid WGS84 also on iOS",
-  "homepage": "https://github.com/issepela/my-expo-location",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "description": "Custom modified fork of expo-location to show height above the ellipsoid WGS84 also on iOS",
+  "main": "build/index.js",  // <--- CHANGED
+  "types": "build/index.d.ts", // <--- CHANGED
   "sideEffects": false,
-  "scripts": {
-    "prepare": ""
-  },
-  "peerDependencies": {
-    "expo": "*"
+  "scripts": {                 // <--- ADDED BACK
+    "build": "expo-module build",
+    "clean": "expo-module clean",
+    "lint": "expo-module lint",
+    "test": "expo-module test",
+    "prepare": "",
+    "prepublishOnly": "expo-module prepublishOnly",
+    "expo-module": "expo-module"
   },
   "keywords": [
     "react-native",
     "expo",
     "location",
-    "geolocation"
+    "geolocation",
+    "coords",
+    "geocoding",
+    "compass",
+    "heading" // <--- Added back full list
   ],
+  "repository": {             // <--- OPTIONAL (but recommended)
+    "type": "git",
+    "url": "https://github.com/issepela/my-expo-location.git"
+    // directory property is optional if you don't use it
+  },
+  "bugs": {                   // <--- OPTIONAL (but recommended)
+    "url": "https://github.com/issepela/my-expo-location/issues"
+  },
   "author": "issepela",
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://github.com/issepela/my-expo-location",
+  "jest": {                   // <--- ADDED BACK
+    "preset": "expo-module-scripts"
+  },
+  "devDependencies": {        // <--- ADDED BACK
+    "expo-module-scripts": "^5.0.7"
+  },
+  "peerDependencies": {
+    "expo": "*"
+  },
+  // "gitHead" property can be omitted
 }
