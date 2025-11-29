@@ -6,10 +6,10 @@ Pod::Spec.new do |s|
   s.name           = 'ExpoLocation'
   s.version        = package['version']
   s.summary        = package['description']
-  s.description    = package['description'] || 'Custom modified fork of expo-location for eclipse countdown. The altitude in iOS is the altitude over the WGS84 ellipsoid.'
+  s.description    = 'Custom modified fork of expo-location for eclipse countdown. The altitude in iOS is the altitude over the WGS84 ellipsoid.'
   s.license        = package['license']
   s.author         = package['author']
-  s.homepage       = package['homepage'] || 'https://github.com/issepela/my-expo-location'
+  s.homepage       = 'https://github.com/issepela/my-expo-location'
   s.platforms      = {
     :ios => '15.1'
   }
