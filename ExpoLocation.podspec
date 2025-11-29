@@ -9,9 +9,9 @@ Pod::Spec.new do |s|
 
   s.platforms      = { :ios => '13.0' }
 
-  s.source         = { 
-    :git => 'https:/github:issepela/my-expo-location.git',
-    :tag => s.version.to_s 
+  s.source = {
+    :git => 'https://github.com/issepela/my-expo-location.git',
+    :tag => s.version.to_s
   }
 
   # Path to your native iOS code (must exist!)
