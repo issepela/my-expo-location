@@ -1,22 +1,9 @@
 {
-  "name": "expo-location",
-  "version": "19.0.7",
-  "summary": "Custom Expo Location module",
-  "description": "Custom modified fork of expo-location to show  height above the ellipsoid WGS84 also on iOS",
-  "homepage": "https://github.com/issepela/my-expo-location",
   "platforms": ["apple", "android"],
-
   "apple": {
     "modules": ["LocationModule"]
   },
-
   "android": {
-    "modules": ["expo.modules.location.LocationModule"],
-    "publication": {
-      "groupId": "host.exp.exponent",
-      "artifactId": "expo.modules.location",
-      "version": "19.0.7",
-      "repository": "local-maven-repo"
-    }
+    "modules": ["expo.modules.location.LocationModule"]
   }
 }
