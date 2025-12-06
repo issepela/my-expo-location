@@ -5,6 +5,5 @@
   },
   "android": {
     "modules": ["expo.modules.location.LocationModule"]
-  },
-  "podspecPath": "./ExpoLocation.podspec"
+  }
 }
