@@ -2,8 +2,8 @@
   "name": "expo-location",
   "version": "19.0.7",
   "description": "Custom modified fork of expo-location to show height above the ellipsoid WGS84 also on iOS",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "sideEffects": false,
   "scripts": {
     "build": "expo-module build",
@@ -22,25 +22,27 @@
     "coords",
     "geocoding",
     "compass",
-    "heading" 
+    "heading"
   ],
-  "repository": {             
+  "repository": {
     "type": "git",
-    "url": "https://github.com/issepela/my-expo-location.git"
+    "url": "https://github.com/expo/expo.git",
+    "directory": "packages/expo-location"
   },
-  "bugs": {                  
-    "url": "https://github.com/issepela/my-expo-location/issues"
+  "bugs": {
+    "url": "https://github.com/expo/expo/issues"
   },
-  "author": "issepela",
+  "author": "650 Industries, Inc.",
   "license": "MIT",
-  "homepage": "https://github.com/issepela/my-expo-location",
-  "jest": {                  
+  "homepage": "https://docs.expo.dev/versions/latest/sdk/location/",
+  "jest": {
     "preset": "expo-module-scripts"
   },
-  "devDependencies": {       
+  "devDependencies": {
     "expo-module-scripts": "^5.0.7"
   },
   "peerDependencies": {
     "expo": "*"
-  }
+  },
+  "gitHead": "088e79428be97cf3ee11fc93e0e5a1fc1c8bea1e"
 }
