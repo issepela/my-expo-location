@@ -5,8 +5,14 @@
   "main": "src/index.ts",
   "types": "src/index.ts",
   "sideEffects": false,
-  "scripts": {                
-    "prepare": ""
+  "scripts": {
+    "build": "expo-module build",
+    "clean": "expo-module clean",
+    "lint": "expo-module lint",
+    "test": "expo-module test",
+    "prepare": "",
+    "prepublishOnly": "expo-module prepublishOnly",
+    "expo-module": "expo-module"
   },
   "keywords": [
     "react-native",
